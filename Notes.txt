@@ -1,0 +1,28 @@
+Trois parties :
+ -Exploratory data analysis
+ -Unsupervised
+ -Supervised
+
+Report
+
+Article Supervised / unsupervised pour des avis : 
+https://medium.com/data-science-lab-spring-2021/amazon-review-rating-prediction-with-nlp-28a4acdd4352
+
+TF-IDF explained :
+https://towardsdatascience.com/introduction-to-nlp-part-3-tf-idf-explained-cedb1fc1f7dc
+
+LightGBM : 
+https://www.analyticsvidhya.com/blog/2021/08/complete-guide-on-how-to-use-lightgbm-in-python/
+https://nitin9809.medium.com/lightgbm-binary-classification-multi-class-classification-regression-using-python-4f22032b36a2
+
+
+Score LGBM :
+Premier session, score : 1.963633849557522 
+    ==> 'learning_rate': 0.3360877479691404, 'boosting_type': 'dart', 'objective': 'multiclass', 'metric': 'multi_logloss', 'num_class': 5, 'sub_feature': 0.8101277378756959, 'num_leaves': 113, 'max_depth': 57, 'verbose': -1
+Deuxième session, score : 1.9171736725663717
+    ==> 'learning_rate': 0.11133843204016172, 'boosting_type': 'dart', 'objective': 'multiclass', 'metric': 'multi_logloss', 'num_class': 5, 'sub_feature': 0.8463746982993108, 'num_leaves': 143, 'min_data': 41, 'max_depth': 50, 'verbose': -1
+    49 Epochs
+    Et même score de 1.9065265486725664 en enlevant 'avoir_word' et 'être_word'
+Troisième session, score : 1.8707134955752212
+    ==> {'learning_rate': 0.15094228842777963,'boosting_type': 'gbdt', 'objective': 'multiclass', 'metric': 'multi_logloss', 'num_class': 5, 'sub_feature': 0.6058784215250052, 'num_leaves': 65, 'min_data': 28, 'max_depth': 51, 'verbose': -1}
+    ? Epochs 49

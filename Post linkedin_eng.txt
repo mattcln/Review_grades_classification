@@ -1,0 +1,22 @@
+Have you ever tried to guess the rating of a review just by reading it?
+
+That's the task I gave to my NLP algorithm.
+Stop words, Lemmatization, Bag of words, TF-IDF... This semester taught me the indispensable tools of Natural Language Processing and this prediction project at ESILV - Ecole Supérieure d'Ingénieurs Léonard de Vinci gave me the opportunity to put them into practice.
+
+In addition to word frequencies, I tuned my model to features such as the percentage of capital letters in a review or the number of capital letters in a row. The same principle was applied to exclamation marks to increase the performance of the classification.
+
+Two major things stand out: 
+- My model had a lot of trouble classifying reviews rated 3/5.
+	This can be explained by this rating being the least occuring of the dataset (only 7%) but also because there are few 'very neutral' words, as opposed to very positive or very negative words. A service is rarely 'very OK'.
+
+- My model had trouble differentiating between 4/5 and 5/5 ratings.
+	My first guess may be the average length of these reviews ; negative reviews (1/5 and 2/5) contain 500 characters on average while positive reviews (4/5 and 5/5) contain only 200, which means less content. The rating between these two rates could also change depending on the way customers think : "Why give 5/5, there could always be a better service." or "It wasn't perfect, but they did their best! 5/5".
+
+Working on its hyperparameters, here are the best results I could get using a LightGBM.
+
+43% accuracy and 1.36 RMSE for predictions from 1 to 5.
+73% accuracy when reducing the scores to a 'negative', 'neutral' and 'positive'.
+
+Exciting to learn more about NLP and its applications in the future!
+
+#data #datascience #ml #machinelearning #ai #artificialintelligence #analytics #nlp #naturallanguageprocessing #predictiveanalytics 
