@@ -9,3 +9,4 @@ scikit-learn==1.0.2
 gensim==4.0.1
 googletrans==4.0.0-rc1
 lightgbm==3.2.1
+nltk==3.6.7
