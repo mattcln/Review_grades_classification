@@ -26,3 +26,6 @@ Deuxième session, score : 1.9171736725663717
 Troisième session, score : 1.8707134955752212
     ==> {'learning_rate': 0.15094228842777963,'boosting_type': 'gbdt', 'objective': 'multiclass', 'metric': 'multi_logloss', 'num_class': 5, 'sub_feature': 0.6058784215250052, 'num_leaves': 65, 'min_data': 28, 'max_depth': 51, 'verbose': -1}
     ? Epochs 49
+
+---- Data augmentation
+https://amitness.com/2020/05/data-augmentation-for-nlp/
